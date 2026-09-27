@@ -2,7 +2,8 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0E0C0B" />
 <title>N|J Studio de Beleza | Links</title>
 <meta name="description" content="Micropigmentação, Design de Sobrancelhas e Maquiagem em Venda Nova do Imigrante/ES. Agende seu horário e conheça o Curso VIP Brow Designer." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,18 +20,23 @@
     --radius:14px;
   }
   *{margin:0;padding:0;box-sizing:border-box}
+  html{background:var(--bg);}
   body{
     font-family:'Jost',sans-serif;
     color:var(--text);
     background:
       radial-gradient(120% 90% at 50% -10%, #2a221c 0%, rgba(42,34,28,0) 55%),
       var(--bg);
+    width:100%;
     min-height:100vh;
+    min-height:100dvh;
     display:flex;
-    justify-content:center;
+    flex-direction:column;
+    align-items:center;
     padding:48px 20px 60px;
+    overflow-x:hidden;
   }
-  .wrap{width:100%;max-width:430px;text-align:center}
+  .wrap{width:100%;max-width:430px;margin:0 auto;text-align:center}
 
   /* ---- Foto de perfil ----
      Para usar SUA foto: salve o arquivo como "perfil.jpg" na mesma pasta
